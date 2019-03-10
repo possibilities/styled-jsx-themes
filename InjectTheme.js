@@ -5,18 +5,15 @@ import Theme from './Theme'
 import * as themes from './themes'
 import * as fonts from './fonts'
 
-const getGoogleUrl = query =>
-  `https://fonts.googleapis.com/css?family=${query}`
-
 const InjectTheme = ({ theme, font, reset }) =>
   <>
     {reset && <InjectNormalizeCss />}
     <Theme {...font.values} {...theme.values} />
     <Head>
-      {font.query && (
+      {font.url && (
         <link
           rel='stylesheet'
-          href={getGoogleUrl(font.query)} />
+          href={font.url} />
       )}
     </Head>
   </>

@@ -33,9 +33,10 @@ const ThemeSelector = ({ theme, font, setTheme, setFont }) =>
       value={font.name}
       onChange={event => setFont(fonts[event.target.value])}>
       <option value='base'>base</option>
+      <option value='hack'>hack</option>
       <option value='merriweatherMuli'>merriweather/muli</option>
       <option value='robotocondensedCabin'>roboto condensed/cabin</option>
-      <option value='robotomonoRobotomono'>roboto mono/roboto mono</option>
+      <option value='robotomono'>roboto mono</option>
     </select>
   </div>
 
