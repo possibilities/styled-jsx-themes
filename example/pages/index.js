@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import DemoMarkup from '../components/DemoMarkup'
-import DemoThemeSelector from '../components/DemoThemeSelector'
+import ThemeSelector from 'styled-jsx-themes/ThemeSelector'
 import SettingsContext from 'react-settings-context'
 
 import InjectTheme from 'styled-jsx-themes'
@@ -15,7 +15,7 @@ export default () => {
       <InjectTheme
         font={font}
         theme={theme} />
-      <DemoThemeSelector
+      <ThemeSelector
         font={font}
         theme={theme}
         setFont={setFont}
