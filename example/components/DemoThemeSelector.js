@@ -42,26 +42,10 @@ DemoThemeSelector.propTypes = {
   setFont: PropTypes.func.isRequired,
   setTheme: PropTypes.func.isRequired,
   font: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    titleFont: PropTypes.string.isRequired,
-    bodyFont: PropTypes.string.isRequired,
-    values: PropTypes.shape({
-      bodyFont: PropTypes.string.isRequired,
-      titleFontSize: PropTypes.number,
-      titleFont: PropTypes.string.isRequired,
-      bodyFontSize: PropTypes.number
-    }),
-    query: PropTypes.string
+    name: PropTypes.string.isRequired
   }),
   theme: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    values: PropTypes.shape({
-      colorBlossom: PropTypes.string.isRequired,
-      colorFade: PropTypes.string.isRequired,
-      colorBg: PropTypes.string.isRequired,
-      colorBgAlt: PropTypes.string.isRequired,
-      colorText: PropTypes.string.isRequired
-    })
+    name: PropTypes.string.isRequired
   })
 }
 
