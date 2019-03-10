@@ -24,19 +24,36 @@ yarn add styled-jsx-themes
 
 ### Usage
 
-Inject a theme anywhere in your app with the helper component.
+Inject a theme you in your app layout with the helper component.
 
 ```javascript
+// pages/_app.js
+import App, { Container } from 'next/app'
 import InjectTheme from 'styled-jsx-themes'
 
 import { dark } from 'styled-jsx-themes/themes'
 import { merriweatherMuli } from 'styled-jsx-themes/fonts'
 
-function ({ theme: dark, font: merriweatherMuli }) {
-  <>
-    <InjectTheme theme={theme} font={font} />
-    <p>themed!</p>
-  </>
+class MyApp extends App {
+  static async getInitialProps({ Component, ctx }) {
+    let pageProps = {}
+    if (Component.getInitialProps) {
+      pageProps = await Component.getInitialProps(ctx)
+    }
+    return { pageProps }
+  }
+
+  render () {
+    const { Component, pageProps } = this.props
+    return (
+      <Container>
+        <InjectTheme
+          theme={dark}
+          font={merriweatherMuli} />
+        <Component {...pageProps} />
+      </Container>
+    )
+  }
 }
 ```
 
