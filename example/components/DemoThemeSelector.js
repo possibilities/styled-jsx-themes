@@ -45,7 +45,7 @@ DemoThemeSelector.propTypes = {
     name: PropTypes.string.isRequired,
     titleFont: PropTypes.string.isRequired,
     bodyFont: PropTypes.string.isRequired,
-    props: PropTypes.shape({
+    values: PropTypes.shape({
       bodyFont: PropTypes.string.isRequired,
       titleFontSize: PropTypes.number,
       titleFont: PropTypes.string.isRequired,
@@ -55,7 +55,7 @@ DemoThemeSelector.propTypes = {
   }),
   theme: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    props: PropTypes.shape({
+    values: PropTypes.shape({
       colorBlossom: PropTypes.string.isRequired,
       colorFade: PropTypes.string.isRequired,
       colorBg: PropTypes.string.isRequired,

@@ -2,7 +2,7 @@
 
 export const base = {
   name: 'base',
-  props: {
+  values: {
     colorBlossom: '#2c8898',
     colorFade: '#982c61',
     colorBg: '#f9f9f9',
@@ -13,7 +13,7 @@ export const base = {
 
 export const vader = {
   name: 'vader',
-  props: {
+  values: {
     colorBlossom: '#eb99a1',
     colorFade: '#da4453',
     colorBg: '#120c0e',
@@ -24,7 +24,7 @@ export const vader = {
 
 export const earthly = {
   name: 'earthly',
-  props: {
+  values: {
     colorBlossom: '#338618',
     colorFade: '#5e5e5e',
     colorBg: '#f9f9f9',
@@ -35,7 +35,7 @@ export const earthly = {
 
 export const dark = {
   name: 'dark',
-  props: {
+  values: {
     colorBlossom: '#ffffff',
     colorFade: '#c9c9c9',
     colorBg: '#222222',
@@ -46,7 +46,7 @@ export const dark = {
 
 export const darkSolarized = {
   name: 'darkSolarized',
-  props: {
+  values: {
     colorBlossom: '#2aa198',
     colorFade: '#657b83',
     colorBg: '#002b36',

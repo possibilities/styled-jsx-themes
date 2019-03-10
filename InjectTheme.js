@@ -11,7 +11,7 @@ const getGoogleUrl = query =>
 const InjectTheme = ({ theme, font, reset }) =>
   <>
     {reset && <InjectNormalizeCss />}
-    <Theme {...font.props} {...theme.props} />
+    <Theme {...font.values} {...theme.values} />
     <Head>
       {font.query && (
         <link

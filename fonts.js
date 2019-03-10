@@ -4,7 +4,7 @@ export const base = {
   name: 'base',
   titleFont: 'Verdana',
   bodyFont: 'Serif',
-  props: {
+  values: {
     bodyFont: 'serif',
     titleFont: `'Verdana, Geneva, sans-serif'`
   }
@@ -15,7 +15,7 @@ export const merriweatherMuli = {
   titleFont: 'Merriweather',
   bodyFont: 'Muli',
   query: 'Merriweather|Muli:300',
-  props: {
+  values: {
     bodyFont: `'Merriweather', Serif`,
     titleFontSize: 46,
     titleFont: `'Muli', Sans-Serif`,
@@ -28,7 +28,7 @@ export const robotocondensedCabin = {
   titleFont: 'Roboto Condensed',
   bodyFont: 'Cabin',
   query: 'Cabin|Roboto:400,700|Roboto+Condensed:400,700',
-  props: {
+  values: {
     bodyFont: `'Roboto Condensed', Sans-Serif`,
     titleFontSize: 35,
     titleFont: `'Cabin', Sans-Serif`,
