@@ -3,8 +3,6 @@ import DemoMarkup from '../components/DemoMarkup'
 import ThemeSelector from 'styled-jsx-themes/ThemeSelector'
 import SettingsContext from 'react-settings-context'
 
-import InjectTheme from 'styled-jsx-themes'
-
 export default () => {
   const [settings, patchSettings] = useContext(SettingsContext)
   const { theme, font } = settings
@@ -12,9 +10,6 @@ export default () => {
   const setFont = font => patchSettings({ font })
   return (
     <>
-      <InjectTheme
-        font={font}
-        theme={theme} />
       <ThemeSelector
         font={font}
         theme={theme}
