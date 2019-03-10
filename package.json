@@ -4,14 +4,15 @@
   "license": "MIT",
   "main": "./index.js",
   "scripts": {
+    "build": "echo nothing to build",
     "lint": "standard",
-    "pretest": "standard",
-    "build": "echo nothing to build"
+    "lint-watch": "nodemon --quiet --exec 'standard && echo linting: OK' --watch '**/*.js' --ignore node_modules"
   },
   "dependencies": {
     "prop-types": "15.6.2"
   },
   "devDependencies": {
+    "release": "^6.0.1",
     "standard": "^12.0.1"
   }
 }
