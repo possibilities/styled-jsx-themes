@@ -1,0 +1,17 @@
+{
+  "name": "styled-jsx-themes",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "./index.js",
+  "scripts": {
+    "lint": "standard",
+    "pretest": "standard",
+    "build": "echo nothing to build"
+  },
+  "dependencies": {
+    "prop-types": "15.6.2"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}

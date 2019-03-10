@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "styled-jsx-themes",
+  "public": true,
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ],
+  "alias": "styled-jsx-themes.now.sh"
+}
