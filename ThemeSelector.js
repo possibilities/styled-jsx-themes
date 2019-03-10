@@ -35,6 +35,7 @@ const ThemeSelector = ({ theme, font, setTheme, setFont }) =>
       <option value='base'>base</option>
       <option value='merriweatherMuli'>merriweather/muli</option>
       <option value='robotocondensedCabin'>roboto condensed/cabin</option>
+      <option value='robotomonoRobotomono'>roboto mono/roboto mono</option>
     </select>
   </div>
 

@@ -35,3 +35,16 @@ export const robotocondensedCabin = {
     bodyFontSize: 16
   }
 }
+
+export const robotomonoRobotomono = {
+  name: 'robotomonoRobotomono',
+  titleFont: 'Roboto Mono',
+  bodyFont: 'Roboto Mono',
+  query: 'Roboto+Mono:400,700',
+  values: {
+    bodyFont: `'Roboto Mono', 'Lucida Console', Monaco, monospace`,
+    titleFontSize: 35,
+    titleFont: `'Roboto Mono', 'Lucida Console', Monaco, monospace`,
+    bodyFontSize: 16
+  }
+}
