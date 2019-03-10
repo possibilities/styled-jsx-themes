@@ -6,6 +6,7 @@
   "scripts": {
     "build": "echo nothing to build",
     "lint": "standard",
+    "release": "release",
     "lint-watch": "nodemon --quiet --exec 'standard && echo linting: OK' --watch '**/*.js' --ignore node_modules"
   },
   "dependencies": {
